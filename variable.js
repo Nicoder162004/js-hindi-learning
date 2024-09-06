@@ -1,12 +1,22 @@
-const accountId = 12234
-let accountEmail = "hiteshchaudhary@gmail.com"
-var accountPassword = "1234"
-accountCity = " Jaipur"
-console.table([accountId,accountEmail,accountPassword,accountCity])
+const accountId = 144553
+let accountEmail = "hitesh@google.com"
+var accountPassword = "12345"
+accountCity = "Jaipur"
+let accountState;
+
+// accountId = 2 // not allowed
+
+
+accountEmail = "hc@hc.com"
+accountPassword = "21212121"
+accountCity = "Bengaluru"
+
+console.log(accountId);
+
 /*
-Summary of Differences:
-Scope: var is function-scoped, while let and const are block-scoped.
-Re-declaration: var allows re-declaration within the same scope; let and const do not.
-Hoisting: All are hoisted, but let and const remain in the "temporal dead zone" until they're initialized. var is initialized with undefined.
-Immutability: const cannot be reassigned after declaration, whereas var and let can be.
+Prefer not to use var
+because of issue in block scope and functional scope
 */
+
+
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
